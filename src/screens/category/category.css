@@ -1,0 +1,74 @@
+.category-body{
+    width: 94%;
+    height: 90%;
+    padding: 3%;
+    display: flex;
+    flex-direction: col;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+.category-card {
+    position: relative;
+    width: 15%;
+    height: 38%;
+    border-radius: 20px;
+    padding: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-card:hover .category-fade {
+    opacity: 1;
+  }
+  
+  .category-image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  .category-title {
+    font-weight: 800;
+    font-size: 16px;
+    color: #3D6AF1;
+    margin: 10px 0px 10px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
+  .category-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0px;
+    color: #5e89cf;
+  }
+  
+  .category-fade {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    opacity: 0;
+    width: 84%;
+    height: 34%;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 8%;
+    transition: 0.5s ease;
+  }
